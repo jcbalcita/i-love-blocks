@@ -4,7 +4,7 @@ A JavaScript game about a bureaucrat in the post-apocalyptic US government who, 
 
 ## Background
 
-I Love Blocks is a variation on the classic game in which the player shoots objects at blocks on the screen with the goal of destroying the blocks on impact.  Each block will have a displayed number representing the number of hits left before it is destroyed. The player can also hit various bonuses that will increase his/her power to destroy blocks.
+I Love Blocks is a variation on the classic game in which the player shoots objects at blocks on the screen with the goal of destroying the blocks on impact.  Each block will colored depending on the number of hits left before it is destroyed. The player can also hit various bonuses that will increase his/her power to destroy blocks.
 
 ## Functionality and MVP
 
