@@ -1,0 +1,19 @@
+{
+  "name": "i-love-blocks",
+  "version": "1.0.0",
+  "description": "A JavaScript game about a bureaucrat in the post-apocalyptic US government who, despite his great personal love of blocks, is forced to destroy them in order to keep his job and livelihood.",
+  "main": "webpack.config.js",
+  "dependencies": {
+    "babel-core": "^6.18.2",
+    "babel-loader": "^6.2.7",
+    "babel-preset-es2015": "^6.18.0",
+    "webpack": "^1.13.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
