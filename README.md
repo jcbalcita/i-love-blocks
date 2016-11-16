@@ -35,15 +35,15 @@ This project will be implemented with the following technologies:
 
 ### Implementation Timeline
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and running and `Easel.js` installed.  Create `webpack.config.js` as well as `package.json`.  Write a basic entry file and the bare bones of all 3 scripts outlined above.  Learn the basics of Canvas.  Goals for the day:
+**Day 1**: Setup all necessary Node modules, including getting webpack up and displaying a Canvas board.  Create `webpack.config.js` as well as `package.json`.  Write a basic entry file and the bare bones of all 3 scripts outlined above.  Learn the basics of Canvas.  Goals for the day:
 
 - Get a green bundle with `webpack`
-- Learn enough `Easel.js` to render an object to the `Canvas` element
+- Learn enough `Canvas` to render an object to the `Canvas` element
 
 **Day 2**: Dedicate this day to learning the Canvas API.  Set up the blocks module.
 
 - Complete the `block.js` module (constructor, update functions)
-- Render square blocks to the `Canvas` using `Easel.js`
+- Render square blocks to the `Canvas`
 
 **Day 3**:  Goals for the day:
 
