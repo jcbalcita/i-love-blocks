@@ -2,10 +2,6 @@
 
 A JavaScript game, displayed via HTML5 Canvas, about a bureaucrat in the post-apocalyptic US government who, despite his great personal love of blocks, is forced to destroy them in order to keep his job and livelihood.
 
-## Background
-
-I Love Blocks is 2-D shooter game
-
 ## Functionality and MVP
 
 The game will feature:
