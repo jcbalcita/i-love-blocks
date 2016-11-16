@@ -1,10 +1,10 @@
 # i-love-blocks
 
-A JavaScript game about a bureaucrat in the post-apocalyptic US government who, despite his great personal love of blocks, is forced to destroy them in order to keep his job and livelihood.
+A JavaScript game, displayed via HTML5 Canvas, about a bureaucrat in the post-apocalyptic US government who, despite his great personal love of blocks, is forced to destroy them in order to keep his job and livelihood.
 
 ## Background
 
-I Love Blocks is a variation on the classic game in which the player shoots objects at blocks on the screen with the goal of destroying the blocks on impact.  Each block will colored depending on the number of hits left before it is destroyed. The player can also hit various bonuses that will increase his/her power to destroy blocks.
+I Love Blocks is 2-D shooter game
 
 ## Functionality and MVP
 
@@ -12,7 +12,7 @@ The game will feature:
 
 - [ ] Start/Pause and New Game buttons
 - [ ] Rendered blocks that the player can destroy on the screen
-- [ ] Additional blocks that are rendered after each player turn
+- [ ] Additional blocks that are rendered after blocks are destroyed
 - [ ] A 'Game Over' message if the player allows blocks to reach the bottom of the screen
 
 In addition, this project will include:
