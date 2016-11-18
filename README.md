@@ -1,12 +1,13 @@
 # i-love-blocks
 
-A JavaScript game, displayed via HTML5 Canvas, about a bureaucrat in the post-apocalyptic US government who, despite his great personal love of blocks, is forced to destroy them in order to keep his job and livelihood.
+A JavaScript game, displayed via `HTML5 Canvas`, about a bureaucrat in the post-apocalyptic US government who, despite his great personal love of blocks, is forced to destroy them in order to keep his job and livelihood.
 
 ## Functionality and MVP
 
-The game will feature:
+This game features:
 
-- [ ] Start/Pause and New Game buttons
+- [ ] Start screen and mute/unmute buttons
+- [ ] Mute/unmute buttons
 - [ ] Rendered blocks that the player can destroy on the screen
 - [ ] Additional blocks that are rendered after blocks are destroyed
 - [ ] A 'Game Over' message if the player allows blocks to reach the bottom of the screen
@@ -17,40 +18,35 @@ In addition, this project will include:
 
 ### Architecture and Technologies 
 
-This project will be implemented with the following technologies:
+This project features the following technologies:
 
-- Vanilla JavaScript and `jquery` for overall structure and game logic,
-- `Easel.js` with `HTML5 Canvas` for DOM manipulation and rendering,
+- Vanilla JavaScript for overall structure and game logic,
+- `HTML5 Canvas` for DOM manipulation and rendering,
 - Webpack to bundle and serve up the various scripts.
 
-`game_view.js`: this script will create and update the necessary `Easel.js` elements and render them to the DOM.
+`game_view.js`: this script creates and updates the Canvas element and renders it to the DOM
 
-`game.js`: this script will perform the logic of the game behind the scenes, including but not limited to the effects on impacted blocks.
+`game.js`: this script performs the logic of the game behind the scenes, including but not limited to the effects on impacted blocks.
 
-`block.js`: this script will create the block objects and assign their 'hit points'.
+`block.js`: this script creates the block objects and assigns their 'hit points', velocity, size, etc.
 
-`cannon.js`: this script renders the 'cannon' object and allows it to move and shoot bullets.
+`cannon.js`: this script renders the main character object at the bottom of the screen and allows it to move and shoot bullets.
 
-`bullet.js`" this script will create the bullet objects.
+`bullet.js`" this script will create the bullet objects; `new Bullet()` is called within `cannon.js`.
 
-### Implementation Timeline
+### Gameplay/Directions
 
-**Day 1**: Setup all necessary Node modules, including getting webpack up and displaying a Canvas board.  Create `webpack.config.js` as well as `package.json`.  Write a basic entry file and the bare bones of all 3 scripts outlined above.  Learn the basics of Canvas.  Goals for the day:
+Spacebar -- shoot bullet
+"a" -- move left
+"d" -- move right
 
-- Get a green bundle with `webpack`
-- Learn enough `Canvas` to render an object to the `Canvas` element
+Shoot bullets to destroy the blocks before they reach the bottom of the screen.
 
-**Day 2**: Dedicate this day to learning the Canvas API.  Set up the blocks module.
+### Features
 
-- Complete the `block.js` module (constructor, update functions)
-- Render square blocks to the `Canvas`
+- Canvas DOM element that is re-rendered at a rate of 60 frames per second.
+- 2-dimensional collision detection that is fired off at each frame.
+- Random color generator that is called each time a block is hit with a bullet.
+- Moveable character that can fire objects
 
-**Day 3**:  Goals for the day:
 
-- Complete the `bullets.js` module (constructor, update functions)
-- Make the blocks 'hittable' and 'destroyable'
-
-**Day 4**: Install the controls for the user to interact with the game.  Style the frontend, making it polished and professional.  Goals for the day:
-
-- Create controls for game speed, stop, start, reset
-- Have a styled `Canvas`, nice looking controls and title
