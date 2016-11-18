@@ -18,6 +18,11 @@ body button {
   border: none;
 }
 
+body button:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 .bottom {
   margin: 0 auto;
   display: block;
@@ -50,4 +55,5 @@ body button {
 .instructions div {
   float: left;
   margin-right: 25px;
+  text-shadow: 2px 2px black;
 }
