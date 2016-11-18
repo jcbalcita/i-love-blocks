@@ -2,19 +2,19 @@
 
 A JavaScript game, displayed via `HTML5 Canvas`, about a bureaucrat in the post-apocalyptic US government who, despite his great personal love of blocks, is forced to destroy them in order to keep his job and livelihood.
 
-## Functionality and MVP
+### Features
 
-This game features:
+- Canvas DOM element that is re-rendered at a rate of 60 frames per second.
+- 2-dimensional collision detection that is fired off at each frame.
+- Random color generator that is called each time a block is hit with a bullet.
+- Moveable character that can fire objects
+
 
 - [ ] Start screen and mute/unmute buttons
 - [ ] Mute/unmute buttons
 - [ ] Rendered blocks that the player can destroy on the screen
 - [ ] Additional blocks that are rendered after blocks are destroyed
 - [ ] A 'Game Over' message if the player allows blocks to reach the bottom of the screen
-
-In addition, this project will include:
-
-- [ ] A production Readme
 
 ### Architecture and Technologies 
 
@@ -42,11 +42,5 @@ Spacebar -- shoot bullet
 
 Shoot bullets to destroy the blocks before they reach the bottom of the screen.
 
-### Features
-
-- Canvas DOM element that is re-rendered at a rate of 60 frames per second.
-- 2-dimensional collision detection that is fired off at each frame.
-- Random color generator that is called each time a block is hit with a bullet.
-- Moveable character that can fire objects
 
 
