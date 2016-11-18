@@ -1,6 +1,28 @@
 body {
   background-color: black;
   text-align: center;
+  background-image: url("assets/rain.gif");
+}
+
+body img {
+  width: 100%;
+  height: 100vh;
+}
+
+body button {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  background-color: white;
+  outline: none;
+  border: none;
+}
+
+.bottom {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 
 #canvas {
@@ -9,9 +31,23 @@ body {
   margin: 0 auto;
 }
 
+#mute {
+  display: inline-block;
+}
+
+#unmute {
+  display: none;
+}
+
 .instructions {
   font-family: sans-serif;
   color: white;
   font-size: 16px;
   font-weight: bold;
+  display: inline-block;
+}
+
+.instructions div {
+  float: left;
+  margin-right: 25px;
 }

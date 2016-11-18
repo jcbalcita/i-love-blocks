@@ -3,10 +3,40 @@
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script type="application/javascript" src="lib/keymaster.js"></script>
     <script type="application/javascript" src="lib/bundle.js"></script>
+
+    <script type="text/javascript">
+    function mute() {
+      const audios = document.getElementsByTagName('audio');
+      for (var i = 0; i < audios.length; i++) {
+        audios[i].volume = 0.0;
+      }
+      document.getElementById("mute").style.display = "none";
+      document.getElementById("unmute").style.display = "inline-block";
+
+    }
+
+    function unmute() {
+      const audios = document.getElementsByTagName('audio');
+      for (var i = 0; i < audios.length; i++) {
+        audios[i].volume = 1;
+      }
+      document.getElementById("unmute").style.display = "none";
+      document.getElementById("mute").style.display = "inline-block";
+
+    }
+    </script>
+
     <link rel="stylesheet" href="blocks.css">
   </head>
 
   <body>
+    <div id="all-sounds">
+      <audio id="gameplay" src="assets/sounds/gameplay.mp3"></audio>
+      <audio id="game-over" src="assets/sounds/gameOver.wav"></audio>
+      <audio id="intro-music" src="assets/sounds/intro.mp3"></audio>
+      <audio id="bullet" src="assets/sounds/bullet.wav"></audio>
+    </div>
+
     <div style="display:none;">
       <img id="char" src="assets/agent.png">
     </div>
@@ -15,10 +45,14 @@
       Your browser doesn't support canvas.
     </canvas>
 
-    <div class="instructions">
-      <p>"a" – move left</p>
-      <p>"d" – move right</p>
-      <p>"spacebar" – fire</p>
+    <div class="bottom">
+      <button id="mute" onclick="mute();">Mute</button>
+      <button id="unmute" onclick="unmute();">Unmute</button>
+      <div class="bottom-container">
+        <div class="instructions">
+          <div>a - move left</div><div>d - move right</div><div>spacebar - fire</div>
+        </div>
+      </div>
     </div>
 
   </body>
