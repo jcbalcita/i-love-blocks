@@ -1,7 +1,8 @@
 body {
   background-color: black;
   text-align: center;
-  background-image: url("assets/rain.gif");
+  background-image: url("assets/rainy.jpg");
+  background-size: cover;
 }
 
 body img {
