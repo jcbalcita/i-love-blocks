@@ -10,9 +10,9 @@ A JavaScript game, displayed via `HTML5 Canvas`, about a bureaucrat in the post-
 - Moveable character that can fire objects
 
 
-- [x] Start screen and mute/unmute buttons
+- [x] Start screen
 - [x] Mute/unmute buttons
-- [x] Rendered blocks that the player can destroy on the screen
+- [x] Rendered blocks, with varying hit points, that the player can destroy on the screen
 - [x] Additional blocks that are rendered after blocks are destroyed
 - [x] A 'Game Over' message if the player allows blocks to reach the bottom of the screen
 
